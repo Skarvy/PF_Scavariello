@@ -1,0 +1,21 @@
+.header{
+    background-color:$color-primario;
+  }
+.navbar-toggler{
+    border: none !important;
+  }
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+    
+  .logo__image{
+    width: 85px ;
+    height: 85px ;
+  
+  }
+
+  .colorPrimario{
+    background-color: $color-primario;
+  }
+ 
+

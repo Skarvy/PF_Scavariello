@@ -1,0 +1,54 @@
+.formulario {
+    background-image: url(../img/marketing/fondoform.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .formulario__title {
+    
+    margin-bottom: 20px;
+  }
+  
+  .formulario__form {
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .formulario__campo {
+    margin-bottom: 15px;
+  }
+  
+  .formulario__label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .formulario__input,
+  .formulario__textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .formulario__textarea{
+    height: 100px;
+    resize: none;
+  }
+  
+  .formulario__button {
+    padding: 10px 20px;
+    background-color:$color-botones;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  

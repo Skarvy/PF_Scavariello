@@ -1,34 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
-*{
-  font-family: 'Roboto', sans-serif;
-  }
-
-
-h2{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+h2 {
   font-size: 50px;
   font-weight: bold;
+  margin: 15px 0px;
 }
 
-.colorPrimario{
+.header {
   background-color: #27374D;
 }
 
-
-
-.navbar-toggler{
+.navbar-toggler {
   border: none !important;
 }
-.navbar-toggler:focus{
+
+.navbar-toggler:focus {
   box-shadow: none;
 }
 
-.logo__image{
-  width: 85px ;
-  height: 85px ;
-
+.logo__image {
+  width: 85px;
+  height: 85px;
 }
 
-/* -------------------------------------------- Estilos para el contenedor del video  de la pagina index --------------------------------------------*/   
+.colorPrimario {
+  background-color: #27374D;
+}
 
 .contenedorVideo {
   margin-top: 0;
@@ -61,17 +57,63 @@ h2{
   text-align: center;
   z-index: 1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  width: 100%; 
+  width: 100%;
 }
 
-  
+/* --------------------------------------------Estilos para los banners -------------------------------------------- */
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
 
+/* Con el fin de reutilizar codigo, se crea una clase extra que solo intercambia el fondo del banner*/
+.banner-marketing {
+  background-image: url("../img/marketing/domoposte.jpg");
+}
 
-/* -------------------------------------------- Estilos para la sección de Novedades de la pagina index --------------------------------------------*/
+.banner-promocional {
+  background-image: url("../img/marketing/tecnicos.jpeg");
+}
 
-.novedades__title{
+.banner-ofertas {
+  background-image: url("../img/marketing/banner2.jpg");
+}
+
+.banner-familia {
+  background-image: url("../img/marketing/familia.jpg");
+}
+
+.bannerContacto__content {
   text-align: center;
 }
+
+.bannerContacto__title {
+  font-size: 34px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bannerContacto__button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0088cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.novedades__title {
+  text-align: center;
+}
+
 .novedades__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -100,86 +142,22 @@ h2{
   height: auto;
   object-fit: cover;
   margin-left: 10px;
-  
 }
 
 .novedades__text {
   margin-top: 10px;
   margin-left: 15px;
   text-decoration: none;
-  
 }
-
-
-
-/* --------------------------------------------Estilos para los banners -------------------------------------------- */
-
-.banner {
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat;
- }
-
- /* Con el fin de reutilizar codigo, se crea una clase extra que solo intercambia el fondo del banner*/
-
-.banner-marketing {
-  background-image: url("../img/marketing/domoposte.jpg");
-}
-
-.banner-promocional {
-  background-image: url("../img/marketing/tecnicos.jpeg") ;
-}
-
-.banner-ofertas {
-  
-  background-image: url("../img/marketing/banner2.jpg");
-}
-
-
-.banner-familia {
-  
-  background-image: url("../img/marketing/familia.jpg");
-}
-
-
-.bannerContacto__content {
-  text-align: center;
-}
-
-.bannerContacto__title {
-  font-size: 34px;
-  color: #fff;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.bannerContacto__button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0088cc;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  margin: 0 10px;
-}
-
-
-
-
-/* -------------------------------------------- Estilos para la sección de Ventajas de la pagina-------------------------------------------- */
 
 .ventajas {
   width: 100%;
-  text-align: center; 
+  text-align: center;
+  padding: 8px;
 }
 
 .ventajas__title {
-  margin-top: 30px;  
+  margin-top: 30px;
 }
 
 .ventajas__link {
@@ -197,7 +175,6 @@ h2{
   background-color: #006699;
 }
 
-/* --------------------------------------------Estilos para la sección de Clientes -------------------------------------*/
 .clientes {
   text-align: center;
 }
@@ -209,16 +186,21 @@ h2{
   margin-top: 20px;
   margin-bottom: 20px;
   justify-items: center;
-  
 }
 
-.clientes__image{
+.clientes__image {
   width: 250px;
 }
+
 .clientes__card {
   text-align: center;
   border: 2px solid #ccc;
+  border-radius: 15px;
   padding: 10px;
+}
+.clientes__card p {
+  margin-top: 15px;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
@@ -226,23 +208,18 @@ h2{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
-
-
-/* --------------------------------------------Estilos para la seccion de cámaras en vivo  -------------------------------------------- */
-
 .camarasContainer {
- width: 100%;
+  width: 100%;
 }
 
-.camarasVivo__title{
+.camarasVivo__title {
   text-align: center;
 }
 
 .camarasVivo__iframe {
   width: 100%;
-  height: 500px;  
+  height: 500px;
 }
-
 
 .botonesContainer {
   display: flex;
@@ -251,26 +228,10 @@ h2{
   margin: 20px;
 }
 
-.bannerContacto__button {
-  margin: 10px;
-  padding: 10px 20px;
-  max-width: 300px; 
-}
-
-@media screen and (max-width: 768px) {
-  .camarasContainer {
-    padding: 0 10px; 
-  }
-}
-
-
-
-
-/* -------------------------------------------- Estilos para area de productos Pagina productos.html -------------------------------------------- */
-
-.productos{
+.productos {
   margin-top: 15px;
 }
+
 .productos__title {
   text-align: center;
 }
@@ -279,11 +240,10 @@ h2{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap:20px;
+  gap: 20px;
   justify-content: center;
   margin-bottom: 35px;
 }
-
 
 .productos__card {
   width: 300px;
@@ -320,7 +280,7 @@ h2{
   align-items: center;
 }
 
-.productos__form input[type="number"] {
+.productos__form input[type=number] {
   width: 50px;
   text-align: center;
 }
@@ -342,25 +302,18 @@ h2{
   text-decoration: none;
 }
 
-
-/* -------------------------------------------- Estilos para Pagina nosotros.html -------------------------------------------- */
-
 .nosotros {
-  background-color: #f2f2f2;
   padding: 20px;
-  
 }
 
 .nosotros__content {
   max-width: 800px;
-  margin: auto ;
-
+  margin: auto;
 }
 
-.nosotros__title{
+.nosotros__title {
   text-align: center;
 }
-
 
 .nosotros__paragraphs {
   margin-bottom: 20px;
@@ -370,11 +323,6 @@ h2{
   color: #666;
   line-height: 1.5;
 }
-
-
-/* -------------------------------------------- Estilos para formulario Pagina Contacto.html -------------------------------------------- */
-
-
 
 .formulario {
   background-image: url(../img/marketing/fondoform.jpeg);
@@ -387,7 +335,6 @@ h2{
 }
 
 .formulario__title {
-  
   margin-bottom: 20px;
 }
 
@@ -415,14 +362,14 @@ h2{
   border-radius: 4px;
 }
 
-.formulario__textarea{
+.formulario__textarea {
   height: 100px;
   resize: none;
 }
 
 .formulario__button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #0088cc;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -430,9 +377,7 @@ h2{
   margin-bottom: 15px;
 }
 
-/* -------------------------------------------- Estilos para la Pagina Maintenance --------------------------------------------*/
-
-.construccion__content{
+.construccion__content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -440,24 +385,19 @@ h2{
   justify-content: center;
   align-items: center;
   color: white;
-  padding-bottom: 150px;  
+  padding-bottom: 150px;
   background-image: url(../img/marketing/construccion.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom: #27374D 35px solid;
   background-color: rgba(0, 0, 0, 0.8);
-
 }
 
-.construccion__text{
+.construccion__text {
   margin-top: 55px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-   font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
 }
-
-
-
-/* -------------------------------------------- Estilos para la sección del Footer --------------------------------------------*/
 
 .footer {
   background-color: #27374d;
@@ -467,7 +407,7 @@ h2{
   justify-content: center;
   align-items: center;
   margin: auto;
-  }
+}
 
 .footer__logo {
   margin-bottom: 10px;
@@ -476,7 +416,6 @@ h2{
 .footer__logo-img {
   width: 100px;
 }
-
 
 .footer__links {
   display: flex;
@@ -487,11 +426,10 @@ h2{
 }
 
 @media (min-width: 768px) {
-  .footer__links{
+  .footer__links {
     display: flex;
     flex-direction: row;
   }
-  
 }
 .footer__link {
   display: flex;
@@ -520,10 +458,6 @@ h2{
   padding: 5px;
 }
 
-.footer__social-media a:hover {
-  background-color: #555;
-}
-
 .footer__text {
   color: white;
   border: 1px solid black;
@@ -540,26 +474,10 @@ h2{
   padding: 5px;
 }
 
-.footer__text a:hover {
-  background-color: #555;
-}
-
-.footer__text:first-child {
-  margin-right: 10px;
-}
-
-.footer__text:last-child {
-  margin-left: 10px;
-}
-
 .footer__designed-by {
   color: white;
   border: 1px solid black;
   padding: 5px;
-}
-
-.footer__designed-by:hover {
-  background-color: #555;
 }
 
 .footer__copyright {
@@ -569,3 +487,9 @@ h2{
   border-top: 1px solid black;
   padding-top: 10px;
 }
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
