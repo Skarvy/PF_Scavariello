@@ -18,10 +18,8 @@
     }
   
   .footer__links {
-    display: flex;
+    @extend %centrado;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 20px;
   }
   

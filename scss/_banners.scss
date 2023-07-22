@@ -1,11 +1,9 @@
 
 .banner {
+    @extend %centrado;
     background-size: cover;
     background-position: center;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 400px;    
     background-repeat: no-repeat;
    }
   

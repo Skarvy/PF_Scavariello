@@ -1,10 +1,8 @@
 .construccion__content{
     width: 100%;
-    display: flex;
+    @extend %centrado;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     color: white;
     padding-bottom: 150px;  
     background-image: url(../img/marketing/construccion.jpeg);

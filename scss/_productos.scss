@@ -60,9 +60,7 @@
 }
   
   .productos__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %centrado;
     width: 30px;
     height: 30px;
     border-radius: 50%;
