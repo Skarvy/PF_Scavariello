@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
-h2 {
-  font-size: 50px;
+.construccion__text, .construccion__content, .bannerContacto__title, .contenedorVideo__titulo {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2, h1 {
+  font-size: 45px;
   font-weight: bold;
-  margin: 15px 0px;
+  font-style: italic;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
 }
 
 .header {
@@ -56,11 +65,9 @@ h2 {
   font-weight: 800;
   text-align: center;
   z-index: 1;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   width: 100%;
 }
 
-/* --------------------------------------------Estilos para los banners -------------------------------------------- */
 .banner {
   background-size: cover;
   background-position: center;
@@ -69,6 +76,28 @@ h2 {
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
+}
+
+.bannerContacto__content {
+  text-align: center;
+}
+
+.bannerContacto__title {
+  font-size: 34px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.bannerContacto__button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0088cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
 }
 
 /* Con el fin de reutilizar codigo, se crea una clase extra que solo intercambia el fondo del banner*/
@@ -86,28 +115,6 @@ h2 {
 
 .banner-familia {
   background-image: url("../img/marketing/familia.jpg");
-}
-
-.bannerContacto__content {
-  text-align: center;
-}
-
-.bannerContacto__title {
-  font-size: 34px;
-  color: #fff;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.bannerContacto__button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0088cc;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  margin: 10px;
 }
 
 .novedades__title {
@@ -156,6 +163,10 @@ h2 {
   padding: 8px;
 }
 
+.ventajas__container {
+  width: 100%;
+}
+
 .ventajas__title {
   margin-top: 30px;
 }
@@ -170,7 +181,6 @@ h2 {
   padding: 10px 20px;
   margin: 10px;
 }
-
 .ventajas__link:hover {
   background-color: #006699;
 }
@@ -188,15 +198,14 @@ h2 {
   justify-items: center;
 }
 
-.clientes__image {
-  width: 250px;
-}
-
 .clientes__card {
   text-align: center;
   border: 2px solid #ccc;
   border-radius: 15px;
   padding: 10px;
+}
+.clientes__card img {
+  width: 250px;
 }
 .clientes__card p {
   margin-top: 15px;
@@ -255,15 +264,13 @@ h2 {
   align-items: center;
   justify-content: space-around;
 }
-
-.productos__image {
+.productos__card img {
   width: 80%;
   height: auto;
   object-fit: cover;
   overflow: hidden;
 }
-
-.productos__text {
+.productos__card p {
   margin-top: 10px;
   margin-left: 15px;
 }
@@ -302,24 +309,12 @@ h2 {
   text-decoration: none;
 }
 
-.nosotros {
-  padding: 20px;
-}
-
 .nosotros__content {
   max-width: 800px;
   margin: auto;
 }
-
-.nosotros__title {
-  text-align: center;
-}
-
-.nosotros__paragraphs {
+.nosotros__content p {
   margin-bottom: 20px;
-}
-
-.nosotros__paragraph {
   color: #666;
   line-height: 1.5;
 }
@@ -390,12 +385,10 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom: #27374D 35px solid;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .construccion__text {
   margin-top: 55px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: bold;
 }
 
@@ -408,12 +401,10 @@ h2 {
   align-items: center;
   margin: auto;
 }
-
-.footer__logo {
+.footer a {
   margin-bottom: 10px;
 }
-
-.footer__logo-img {
+.footer a img {
   width: 100px;
 }
 
@@ -438,46 +429,10 @@ h2 {
   text-decoration: none;
   padding: 5px;
 }
-
-.footer__icon {
+.footer__link svg {
   width: 30px;
   height: 30px;
   margin-right: 5px;
-}
-
-.footer__social-media {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.footer__social-media a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
-  padding: 5px;
-}
-
-.footer__text {
-  color: white;
-  border: 1px solid black;
-  padding: 5px;
-  text-align: center;
-  margin: 10px 0;
-  flex-grow: 1;
-}
-
-.footer__text a {
-  color: white;
-  text-decoration: none;
-  border: 1px solid black;
-  padding: 5px;
-}
-
-.footer__designed-by {
-  color: white;
-  border: 1px solid black;
-  padding: 5px;
 }
 
 .footer__copyright {

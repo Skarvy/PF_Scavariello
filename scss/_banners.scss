@@ -1,6 +1,4 @@
 
-/* --------------------------------------------Estilos para los banners -------------------------------------------- */
-
 .banner {
     background-size: cover;
     background-position: center;
@@ -11,7 +9,33 @@
     background-repeat: no-repeat;
    }
   
-   /* Con el fin de reutilizar codigo, se crea una clase extra que solo intercambia el fondo del banner*/
+    
+  
+  .bannerContacto__content {
+    text-align: center;
+  }
+  
+  .bannerContacto__title {
+    font-size: 34px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    @extend %sombra;
+  }
+  
+  .bannerContacto__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:$color-botones;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+  }
+
+  /* Con el fin de reutilizar codigo, se crea una clase extra que solo intercambia el fondo del banner*/
+  
   
   .banner-marketing {
     background-image: url("../img/marketing/domoposte.jpg");
@@ -30,28 +54,5 @@
   .banner-familia {
     
     background-image: url("../img/marketing/familia.jpg");
-  }
-  
-  
-  .bannerContacto__content {
-    text-align: center;
-  }
-  
-  .bannerContacto__title {
-    font-size: 34px;
-    color: #fff;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  .bannerContacto__button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color:$color-botones;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin: 10px;
   }
   

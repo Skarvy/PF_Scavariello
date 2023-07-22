@@ -11,14 +11,14 @@
     justify-items: center;
   }
   
-  .clientes__image{
-    width: 250px;
-  }
   .clientes__card {
     text-align: center;
     border: 2px solid #ccc;
     border-radius: 15px;
     padding: 10px;
+      img{
+        width: 250px;
+      }
       p{
         margin-top: 15px;
         font-weight: bold;
