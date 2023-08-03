@@ -14,6 +14,7 @@ h2, h1 {
   font-weight: bold;
   font-style: italic;
   text-align: center;
+  margin-top: 15px;
 }
 
 h1 {
@@ -102,6 +103,9 @@ h1 {
   transition: background-color 0.3s ease;
   margin: 10px;
 }
+.bannerContacto__button:hover {
+  color: black;
+}
 
 /* Con el fin de reutilizar codigo, se crea una clase extra que solo intercambia el fondo del banner*/
 .banner-marketing {
@@ -169,9 +173,16 @@ h1 {
 .ventajas__container {
   width: 100%;
 }
+.ventajas__container p {
+  padding: 15px;
+}
 
 .ventajas__title {
   margin-top: 30px;
+}
+
+.boton_largo {
+  width: 40%;
 }
 
 .ventajas__link {
@@ -182,10 +193,10 @@ h1 {
   transition: background-color 0.3s ease;
   display: inline-block;
   padding: 10px 20px;
-  margin: 10px;
+  margin: 15px;
 }
 .ventajas__link:hover {
-  background-color: #006699;
+  color: black;
 }
 
 .clientes {
@@ -205,7 +216,7 @@ h1 {
   text-align: center;
   border: 2px solid #ccc;
   border-radius: 15px;
-  padding: 10px;
+  padding: 15px;
 }
 .clientes__card img {
   width: 250px;
@@ -313,8 +324,11 @@ h1 {
   max-width: 800px;
   margin: auto;
 }
+.nosotros__content h1 {
+  margin: 15px;
+}
 .nosotros__content p {
-  margin-bottom: 20px;
+  margin: 10px;
   color: #666;
   line-height: 1.5;
 }

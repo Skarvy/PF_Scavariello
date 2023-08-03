@@ -5,12 +5,18 @@
 }
 .ventajas__container{
   width: 100%;
+       p {
+      padding: 15px
+    };
 }
 
 .ventajas__title {
   margin-top: 30px;  
 }
 
+.boton_largo{
+  width: 40%;
+}
 .ventajas__link {
   background-color:$color-botones;
   color: #fff;
@@ -19,8 +25,8 @@
   transition: background-color 0.3s ease;
   display: inline-block;
   padding: 10px 20px;
-  margin: 10px;
+  margin: 15px;
     &:hover{
-      background-color: #006699;
+      color: black;       
     }
 }
