@@ -334,14 +334,12 @@ h1 {
 }
 
 .formulario {
-  background-image: url(../img/marketing/fondoform.jpeg);
+  background-image: url(../img/marketing/contactofondo.jpg);
   background-size: cover;
   flex-direction: column;
   text-align: center;
-}
-
-.formulario__title {
-  margin-bottom: 20px;
+  height: 700px;
+  padding: 0;
 }
 
 .formulario__form {
@@ -353,19 +351,12 @@ h1 {
   margin-bottom: 15px;
 }
 
-.formulario__label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
 .formulario__input,
 .formulario__textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .formulario__textarea {
