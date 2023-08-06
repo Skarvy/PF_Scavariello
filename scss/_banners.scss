@@ -22,11 +22,8 @@
   }
   
   .bannerContacto__button {
-    @extend %boton;
-    margin:10px;
-    &:hover{
-      color: black;       
-    }
+    @include boton($color-botones,10px);
+  
   }
 
   /* Con el fin de reutilizar codigo, se crea una clase extra que solo intercambia el fondo del banner*/

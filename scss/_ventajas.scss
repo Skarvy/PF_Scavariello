@@ -18,10 +18,5 @@
   width: 40%;
 }
 .ventajas__link {
-  @extend %boton;
-  background-color:$color-botones;
-  margin: 15px;
-    &:hover{
-      color: black;       
-    }
+  @include boton($color-botones,15px);
 }

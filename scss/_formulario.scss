@@ -33,7 +33,7 @@
   }
   
   .formulario__button {
-    @extend %boton;  
+    @include boton($color-botones,10px);
   
     cursor: pointer;
     margin-bottom: 15px;

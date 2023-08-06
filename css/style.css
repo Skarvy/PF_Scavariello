@@ -9,19 +9,6 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.formulario__button, .ventajas__link, .bannerContacto__button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0088cc;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-.formulario__button:hover, .ventajas__link:hover, .bannerContacto__button:hover {
-  transform: scale(1.1);
-}
-
 h2, h1 {
   font-size: 45px;
   font-weight: bold;
@@ -107,9 +94,17 @@ h1 {
 }
 
 .bannerContacto__button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0088cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
   margin: 10px;
 }
 .bannerContacto__button:hover {
+  transform: scale(1.1);
   color: black;
 }
 
@@ -192,10 +187,17 @@ h1 {
 }
 
 .ventajas__link {
+  display: inline-block;
+  padding: 10px 20px;
   background-color: #0088cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
   margin: 15px;
 }
 .ventajas__link:hover {
+  transform: scale(1.1);
   color: black;
 }
 
@@ -365,8 +367,20 @@ h1 {
 }
 
 .formulario__button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0088cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
   cursor: pointer;
   margin-bottom: 15px;
+}
+.formulario__button:hover {
+  transform: scale(1.1);
+  color: black;
 }
 
 .construccion__content {
